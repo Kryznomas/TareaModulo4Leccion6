@@ -1,8 +1,12 @@
 <template>
   <div id="app">
+    <h1>Ejemplo de Routing</h1>
     <div id="nav">
       <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/Router1">Router1</router-link>|
+      <router-link to="/Router2">Router2</router-link>|
+      <router-link to="/Router3">Router3</router-link>|
+      <router-link to="/Router4">Router4</router-link>
     </div>
     <router-view />
   </div>
@@ -23,9 +27,10 @@
   a {
     font-weight: bold;
     color: #2c3e50;
+    margin: 1rem;
 
     &.router-link-exact-active {
-      color: #42b983;
+      color: $Rojo; 
     }
   }
 }
